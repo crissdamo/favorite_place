@@ -21,27 +21,33 @@ class LugaresScreen extends ConsumerWidget {
             color: Color.fromARGB(255, 9, 255, 0),
           ),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(
-              Icons.add_location,
-              size: 30,
-              color: Color.fromARGB(255, 9, 255, 0),
-            ),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const AdicionarLugarScreen(),
-                ),
-              );
-            },
-          ),
-        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: LugaresLista(
           lugares: lugaresUsuario,
+        ),
+      ),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            IconButton(
+              icon: const Icon(
+                Icons.add_location,
+                size: 45,
+                color: Color.fromARGB(255, 9, 255, 0),
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const AdicionarLugarScreen(),
+                  ),
+                );
+              },
+            ),
+          ],
         ),
       ),
     );
