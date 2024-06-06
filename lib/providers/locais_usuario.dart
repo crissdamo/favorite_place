@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:favorite_places/models/lugar.dart';
+import 'package:favorite_places/models/lugar.dart'; // gerenciamento de cache
 
 // Gerenciamento dos locais selecionados pelo usuário
 class NotificadorLugarUsuario extends StateNotifier<List<Lugar>> {

@@ -31,9 +31,6 @@ final theme = ThemeData().copyWith(
 Future<void> main() async {
   await dotenv.load(fileName: ".env");
 
-  // await dotenv.load();
-  // String apiKey = dotenv.get('API_GOOOGLE_KEY');
-  // print(apiKey);
   runApp(
     const ProviderScope(child: MyApp()),
   );

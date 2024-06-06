@@ -24,10 +24,14 @@ class LugaresScreen extends ConsumerWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
+
+        // Lista de lugares salvo
         child: LugaresLista(
           lugares: lugaresUsuario,
         ),
       ),
+
+      // botão que leva para o formulário
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(

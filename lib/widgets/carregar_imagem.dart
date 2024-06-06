@@ -43,11 +43,11 @@ class _CarregaImagemState extends State<CarregaImagem> {
     );
 
     if (_imagemSelecionada != null) {
-      // Como está se verificando que a imagem não é nula, épossível adicionar o pornto de exclamação
       conteudo = GestureDetector(
         // fica escutando para ver se uma imagem é carregada
         onTap: _carregaImagem,
         child: Image.file(
+          // Como está sendo verificando que a imagem não é nula, é possível adicionar o pornto de exclamação
           _imagemSelecionada!,
           fit: BoxFit.cover,
           width: double.infinity,

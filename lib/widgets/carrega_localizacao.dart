@@ -94,7 +94,7 @@ class _CarregaLocalizacaoState extends State<CarregaLocalizacao> {
     final longitude = locationData.longitude;
 
     if (latitude == null || longitude == null) {
-      //TODO: adicionar
+      //TODO: adicionar mensagem ao usuário
       return;
     }
 

@@ -37,7 +37,7 @@ class _AdicionarLugarScreenState extends ConsumerState<AdicionarLugarScreen> {
       return;
     }
 
-    // pega titulo informada e salva um novo lugar
+    // pega titulo, imagem e localização informados e salva um novo lugar
     ref.read(lugaresUsuarioProvider.notifier).adicionaLugar(
         tituloInformado, _imagemSelecionada!, _localizacaoSelecionada!);
 
@@ -99,12 +99,16 @@ class _AdicionarLugarScreenState extends ConsumerState<AdicionarLugarScreen> {
                   _imagemSelecionada = imagem;
                 },
               ),
+
+              // Carrega localização
               const SizedBox(height: 10),
               CarregaLocalizacao(
                 quandoSelecionaLocalizacao: (localizacao) {
                   _localizacaoSelecionada = localizacao;
                 },
               ),
+
+              // botão paa salvar
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 onPressed: _savePlace,

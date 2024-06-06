@@ -27,6 +27,7 @@ UUID. https://pub.dev/packages/uuid
 River Pod. https://pub.dev/packages/flutter_riverpod
 TIWARI, A. Riverpod: The Future of State Management in Flutter. Disponível em:
 https://medium.com/@im_AnkitTiwari/riverpod-the-future-of-state-management-in-flutter-98e43003a930
+https://medium.com/@abubakarsaddqiuekhan/flutter-rivepod-f0d8b1ef9293
 
 
 # Tira uma imagem do celular
@@ -51,6 +52,7 @@ https://pub.dev/packages/http
 > flutter pub add google_maps_flutter
 ### Referencias:
 https://pub.dev/packages/google_maps_flutter
+
 
 # Criar arquivo .env
 flutter pub add flutter_dotenv
